@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:pan="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="App1.Yoga">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#f4f4f4">
+            <StackLayout>
+
+            <StackLayout>
+                    <pan:PancakeView CornerRadius="0,0,50,50" HasShadow="True" HeightRequest="150" BackgroundGradientStartColor="#000513"
+                                     BackgroundGradientEndColor="#243B55">
+                        <Label Text="Yoga" TextColor="White" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    </pan:PancakeView>
+
+                </StackLayout>
+                
+            <StackLayout Padding="19" Spacing="20">
+                    
+                    <Label Text="Empieza con dos o tres minutos sentado con las piernas cruzadas y los ojos cerrados y llevando toda tu atención a la respiración, verás como tu mente se va calmando y te vas preparando para practicar." FontSize="16" TextColor="#000513"/>
+
+                    <Label Text="Realiza después algunos movimientos para calentar un poco el cuerpo,  cualquier movimiento que sientas que te ayuda a estirar esas zonas más tensas (por ejemplo la secuencia gato-vaca)." FontSize="16" TextColor="#000513"/>
+
+                    <Label Text="Empieza la practica con saludos al sol, dos vueltas completas como mínimo para estimular todas las partes del cuerpo. El saludo al sol potencia la buena salud, la energía física, mental y espiritual. Es una meditación a través de la respiración y el movimiento corporal que tonifica y estira los músculos del cuerpo, que aporta flexibilidad en las articulaciones, favorece el riego sanguíneo y tonifica los órganos internos." FontSize="16"  TextColor="#000513"/>
+
+                    <Label Text="Realiza después dos o tres posturas de pie: la postura del triángulo, nos ayuda a aliviar los dolores de espalda, aporta flexibilidad en la columna y fortalece las piernas." FontSize="16"  TextColor="#000513"/>
+
+                    <Label Text="Seguidamente la postura de la lanza, para fortalecer y estirar las piernas, que las caderas adquieran simetría, que el pecho se abra y la columna se estire en ambas direcciones." FontSize="16"  TextColor="#000513"/>
+
+                    <Label Text="Seguidamente una postura de equilibrio, la postura del árbol, ideal para fortalecer las piernas y mejorar el sentido del equilibrio. Alivia la rigidez de los hombros y abre el pecho." FontSize="16" TextColor="#000513"/>
+
+                    <Label Text="Posturas para abrir las caderas, la media paloma que, fortalece los músculos de la parte inferior de la espalda, glúteos, isquiotibiales y gemelos. Flexibiliza la cadera, piernas, rodillas y pectorales." FontSize="16" TextColor="#000513"/>
+
+                    <Label Text="Para abrir el pecho, realizaremos la postura del camello, estirando toda la parte frontal del cuerpo, los tobillos, muslos e ingles." FontSize="16" TextColor="#000513"/>
+
+                    <Label Text="Trabaja un poco el centro (el abdominal) con la postura de navassana o con la plancha, posturas energizantes que te permitirán fortalecer el abdomen y espalda." FontSize="16"  TextColor="#000513"/>
+
+                    <Label Text="Finaliza con otros dos o tres minutos tumbado en el suelo para acabar y dejar que tu cuerpo y tu mente integren todos los beneficios de la práctica." FontSize="16"  TextColor="#000513"/>
+
+                </StackLayout>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

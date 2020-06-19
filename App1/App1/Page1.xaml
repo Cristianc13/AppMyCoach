@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.Page1"
+             Title="Inicio"
+            IconImageSource="home.png"
+             BackgroundColor="#ecf0f1">
+
+
+    <ContentPage.Content>
+ 
+        <StackLayout Padding="30" Spacing="20" HorizontalOptions="Center">
+            
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="¿Como te sientes Hoy?" FontSize="28" TextColor="#000513" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand"/>
+
+          <ImageButton BackgroundColor="#dfe6e9" Scale="0.8" Grid.Row="1" Grid.Column="0" CornerRadius="22" Clicked="ImageButton_Clicked" x:Name="btnfeliz" Source="feliz.png"/>
+           <ImageButton BackgroundColor="#dfe6e9" Grid.Row="1" Grid.Column="1" Source="triste.png" Scale="0.8" CornerRadius="22" Clicked="ImageButton_Clicked_1" x:Name="btntriste"/>
+        
+
+                <ImageButton BackgroundColor="#dfe6e9" Grid.Row="2" Grid.Column="0" HeightRequest="120" CornerRadius="22" Clicked="ImageButton_Clicked_2" x:Name="btnllorando" Scale="0.8" Source="llorando.png"/>
+                <ImageButton BackgroundColor="#dfe6e9" Grid.Row="2" Grid.Column="1" HeightRequest="120" CornerRadius="22" Clicked="ImageButton_Clicked_3" x:Name="btnreinicia" Scale="0.8" Source="reiniciar.png"/>
+                
+                <!--<Image Source="llorando.png" VerticalOptions="CenterAndExpand" HeightRequest="50" Grid.Row="2" Grid.Column="0"/>
+                <Image Source="reiniciar.png" VerticalOptions="CenterAndExpand" HeightRequest="50" Grid.Row="2" Grid.Column="1"/>-->
+                <!--<Image Source="feliz.png" VerticalOptions="CenterAndExpand" HeightRequest="50" Grid.Row="1" Grid.Column="0"/>-->
+                <!--<Image Source="triste.png" VerticalOptions="CenterAndExpand" HeightRequest="50" Grid.Row="1" Grid.Column="1"/>-->
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+    
+    
+</ContentPage>

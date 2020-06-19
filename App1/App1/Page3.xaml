@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:fastEntry="clr-namespace:XamarinFastEntrySample.FastEntry;assembly=XamarinFastEntry.Behaviors"
+             mc:Ignorable="d"
+             xmlns:pan="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="App1.Page3"
+             Title="IMC"
+             BackgroundColor="#ecf0f1">
+
+    <StackLayout>
+        <StackLayout>
+            <pan:PancakeView CornerRadius="0,0,50,50" HasShadow="True" HeightRequest="150" BackgroundGradientStartColor="#000513" BackgroundGradientEndColor="#243B55">
+                <Label Text="IMC" TextColor="White" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </pan:PancakeView>
+
+        </StackLayout>
+        <StackLayout Padding="30" Spacing="20">
+        <Entry Placeholder="Altura(cm)" HeightRequest="60" MaxLength="3" x:Name="enta" Keyboard="Numeric" />
+        <Entry Placeholder="Peso(Kg)" HeightRequest="60" MaxLength="4" x:Name="entp" Keyboard="Numeric"/>
+        <Button Text="Calcular" HeightRequest="50" BackgroundColor="#000513" TextColor="White" CornerRadius="20" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

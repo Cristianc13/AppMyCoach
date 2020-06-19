@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.Page2"
+             xmlns:pan="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             Title="Ejercicios"
+             IconImageSource="home.png"
+             BackgroundColor="#ecf0f1">
+    
+    
+    <ContentPage.Content>
+        <StackLayout Padding="10" Spacing="25" VerticalOptions="Center">
+
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <!--<ColumnDefinition Width="*"/>-->
+                </Grid.ColumnDefinitions>
+
+                <Label Text="¿Que activadad harás Hoy?" FontSize="26" TextColor="#000513" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+
+                <ImageButton BackgroundColor="Black" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" x:Name="btnyoga" Source="yogaa" Clicked="btnyoga_Clicked"/>
+                <Label Text=" Yoga" TextColor="White" Grid.Column="0" Grid.Row="1" FontSize="16" VerticalOptions="Center" />
+                <Label Text=" 4h" TextColor="White" Grid.Column="0" Grid.Row="1" FontSize="20" Grid.ColumnSpan="2" HorizontalOptions="End"  VerticalOptions="Center" Padding="10"/>
+
+
+                <ImageButton BackgroundColor="Black" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"  Source="caminataa.png" x:Name="btcaminando" Clicked="btcaminando_Clicked"/>
+                <Label Text=" Caminata" TextColor="White" Grid.Column="0" Grid.Row="2" FontSize="16" VerticalOptions="Center" />
+                <Label Text=" 4h" TextColor="White" Grid.Column="0" Grid.Row="2" FontSize="20" Grid.ColumnSpan="2" HorizontalOptions="End"  VerticalOptions="Center" Padding="10"/>
+
+                <ImageButton BackgroundColor="Black" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Source="cardioa.png" x:Name="btncardio" Clicked="btncardio_Clicked"/>
+                <Label Text=" Cardio" TextColor="White" Grid.Column="0" Grid.Row="3" FontSize="16" VerticalOptions="Center" />
+                <Label Text=" 4h" TextColor="White" Grid.Column="0" Grid.Row="3" FontSize="20" Grid.ColumnSpan="2" HorizontalOptions="End"  VerticalOptions="Center" Padding="10"/>
+
+                <ImageButton BackgroundColor="Black" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Source="ciclismoa.png" x:Name="btnciclismo" Clicked="btnciclismo_Clicked"/>
+                <Label Text=" Ciclismo" TextColor="White" Grid.Column="0" Grid.Row="4" FontSize="16" VerticalOptions="Center" />
+                <Label Text=" 4h" TextColor="White" Grid.Column="0" Grid.Row="4" FontSize="20" Grid.ColumnSpan="2" HorizontalOptions="End"  VerticalOptions="Center" Padding="10"/>
+
+                <ImageButton BackgroundColor="Black" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" x:Name="btnmeditando" Source="meditaciona.png" Clicked="btnmeditando_Clicked"/>
+                <Label Text=" Meditación" TextColor="White" Grid.Column="0" Grid.Row="5" FontSize="16" VerticalOptions="Center" />
+                <Label Text=" 4h" TextColor="White" Grid.Column="0" Grid.Row="5" FontSize="20" Grid.ColumnSpan="2" HorizontalOptions="End"  VerticalOptions="Center" Padding="10"/>
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

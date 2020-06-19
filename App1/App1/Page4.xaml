@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Videos"
+             x:Class="App1.Page4"
+             BackgroundColor="#ecf0f1">
+    <ContentPage.Content>
+        <ScrollView>
+            
+        
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Videos de Youtube" FontSize="28" TextColor="#000513"  HorizontalOptions="CenterAndExpand"/>
+
+
+                <Label Text="Estiramiento Yoga" FontSize="20" TextColor="#000513"  HorizontalOptions="CenterAndExpand"/>
+                <WebView HeightRequest="200"  Source="https://www.youtube.com/embed/sETvbV0oobI"/>
+               
+            
+                <Label Text="Cardio Abdomen" FontSize="20" TextColor="#000513"  HorizontalOptions="CenterAndExpand"/>
+                <WebView HeightRequest="200"  Source="https://www.youtube.com/embed/iBkBKOThQW4"/>
+
+                <Label Text="Bicileta Estatica" FontSize="20" TextColor="#000513"  HorizontalOptions="CenterAndExpand"/>
+                <WebView HeightRequest="200"  Source="https://www.youtube.com/embed/em-NSkZVjkA"/>
+            
+                <Label Text="Meditacion" FontSize="20" TextColor="#000513"  HorizontalOptions="CenterAndExpand"/>
+                <WebView HeightRequest="200"  Source="https://www.youtube.com/embed/hTKDQ5FRB18"/>
+            
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

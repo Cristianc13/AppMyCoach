@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:pan="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="App1.Ciclismo">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#f4f4f4">
+            <StackLayout>
+
+                <StackLayout>
+                    <pan:PancakeView CornerRadius="0,0,50,50" HasShadow="True" HeightRequest="150" BackgroundGradientStartColor="#000513" BackgroundGradientEndColor="#243B55">
+                        <Label Text="Ciclismo" TextColor="White" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    </pan:PancakeView>
+
+                </StackLayout>
+
+                <StackLayout Padding="19" Spacing="20">
+                    
+
+                    <Label Text="Primero caliente el cuerpo caminando en su sitio o empiece caminando a un ritmo más lento de lo normal durante 3-5 minutos." FontSize="16"  TextColor="#000513"/>
+
+                    <Label Text="Para mantener la flexibilidad o mejorarla, haga ejercicios de estiramiento durante 5-10 minutos después de calentar el cuerpo o después de caminar." FontSize="16"  TextColor="#000513"/>
+
+                    <Label Text="Mantenga una buena postura. Mire hacia adelante, no hacia el suelo, con la barbilla alta y la cabeza erguida." FontSize="16"  TextColor="#000513"/>
+
+                    <Label Text="Asegúrese de tomar agua durante todo el día antes de iniciar su caminata." FontSize="16" TextColor="#000513"/>
+
+                    <Label Text="Póngase zapatos específicamente diseñados para caminar o hacer ejercicio a fin de estar más cómodo y evitar lesiones." FontSize="16"  TextColor="#000513"/>
+
+                    <Label Text="Aumente la velocidad durante intervalos cortos durante su caminata para acelerar su ritmo cardíaco." FontSize="16"  TextColor="#000513"/>
+
+                    <Label Text="Aumente la distancia de sus caminatas para incrementar su resistencia." FontSize="16" TextColor="#000513"/>
+
+                    <Label Text="Camine más rápido y más lejos, e incorpore algunas colinas a su entrenamiento." FontSize="16" TextColor="#000513"/>
+
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

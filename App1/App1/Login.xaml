@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:pan="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="App1.Login"
+             BackgroundColor="#ecf0f1"
+             NavigationPage.HasNavigationBar="False">
+ <StackLayout>
+        <pan:PancakeView  CornerRadius="0,0,50,50" HasShadow="True" BackgroundColor="#000513">
+            <StackLayout HeightRequest="140">
+                <!--<Label Text="Bienvenido" TextColor="White" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" FontSize="20"/>-->
+                <Image Source="logo2.png" WidthRequest="125"/>
+            </StackLayout>
+        </pan:PancakeView>
+        <Grid>
+            <StackLayout Padding="40" Spacing="20">
+                <Entry Placeholder="Usuario" HeightRequest="60" MaxLength="12" x:Name="entusuar" />
+                <Entry Placeholder="Contraseña" HeightRequest="60" IsPassword="True" MaxLength="18" x:Name="entcontra"/>
+                <Button Text="Iniciar Sesion" HeightRequest="50" BackgroundColor="#000513" TextColor="White" CornerRadius="20" Clicked="Button_Clicked"/>
+                <Button Text="Registrarse" HeightRequest="50" BackgroundColor="#000513" TextColor="White" CornerRadius="20"/>
+            </StackLayout>
+  
+          </Grid>
+    </StackLayout>
+</ContentPage>
